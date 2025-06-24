@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turkana Leo Magazine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #a50000;
+      padding: 1rem;
+      gap: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease, color 0.3s ease;
+      border-radius: 20px;
+    }
+    nav a:hover {
+      background: #cc0000;
+    }
+    header {
+      background: url('https://cdn.pixabay.com/photo/2016/11/29/12/32/africa-1867882_1280.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #ff3d3d;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: #ffecec;
+    }
+    section {
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+      background-color: #fefefe;
+    }
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #a50000;
+      border-bottom: 2px solid #e57373;
+      padding-bottom: 0.5rem;
+      text-align: center;
+    }
+    section p, section ul {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    ul { list-style: none; padding-left: 0; }
+    ul li {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    ul li::before {
+      content: '\2022';
+      color: #a50000;
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #fff8f8;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    form input, form textarea, form button {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+    }
+    form button {
+      background: #a50000;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #cc0000;
+    }
+    footer {
+      background: #a50000;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+    a { color: #cc0000; }
+    a:hover { text-decoration: underline; }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <header class="fade-in">
+    <h1>Welcome to Turkana Leo Magazine</h1>
+    <p>Promoting Community Development, Technology Empowerment & Cultural Heritage</p>
+  </header>
+  <section id="about" class="fade-in">
+    <h2>About Us</h2>
+    <p>Turkana Leo Magazine is a vibrant digital platform rooted in Turkana County. We amplify voices from underserved communities, champion local talents, and foster awareness through innovation and culture.</p>
+    <p>We’re driven by the values of inclusivity, digital empowerment, and storytelling — with a strong focus on youth, women, and marginalized groups in our society. Our goal is to support community-led transformation through education, media, and collaborative development.</p>
+  </section>
+  <section id="projects" class="fade-in">
+    <h2>Key Focus Areas</h2>
+    <ul>
+      <li><strong>Community Development:</strong> Promoting sustainable livelihoods, health, education, and environmental conservation.</li>
+      <li><strong>Technology Empowerment:</strong> Training and exposing youth to digital tools and coding to prepare them for future careers.</li>
+      <li><strong>Women & Girl Empowerment:</strong> Supporting leadership, entrepreneurship, and digital literacy for women and girls.</li>
+      <li><strong>Creative Industries:</strong> Highlighting talents in music, art, crafts, design, and storytelling through digital platforms.</li>
+      <li><strong>Digital Storytelling:</strong> Sharing authentic stories from Turkana to preserve culture and inspire change.</li>
+    </ul>
+  </section>
+  <section id="services" class="fade-in">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Web Design & Development:</strong> Creating inclusive websites that serve communities and local businesses.</li>
+      <li><strong>Graphic Design:</strong> Visual communication that supports community causes and identity.</li>
+      <li><strong>Branding:</strong> Helping small businesses and organizations build authentic, impactful brands.</li>
+      <li><strong>Digital Education Facilitation:</strong> Organizing training, mentorship, and access to tools for youth and women.</li>
+      <li><strong>Media Coverage & Publishing:</strong> Documenting and distributing stories, events, and campaigns from the grassroots level.</li>
+      <li><strong>Community Engagement:</strong> Co-designing programs and dialogues with stakeholders to respond to local needs.</li>
+    </ul>
+  </section>
+  <section id="contact" class="fade-in">
+    <h2>Contact Us</h2>
+    <p>If you’re a changemaker, artist, youth, or partner looking to collaborate — we’d love to hear from you!</p>
+    <p>Email: <a href="mailto:nadiita.soninke@learninglions.org">nadiita.soninke@learninglions.org</a></p>
+    <p>Facebook: <a href="https://facebook.com/sonnysoninke" target="_blank">facebook.com/sonnysoninke</a></p>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer class="fade-in">
+    <p>&copy; 2025 Turkana Leo Magazine. Building Resilient Communities through Media & Tech.</p>
+  </footer>
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+</body>
+</html>
